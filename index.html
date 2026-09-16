@@ -1,3 +1,4 @@
+<!-- Cloudflare redeploy -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -10,13 +11,6 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="site-header" id="siteHeader">
-  <div class="site-header__inner">
-    <span class="site-header__name">Mimosa Court</span>
-    <span class="site-header__sub">ミモザコート</span>
-  </div>
-</header>
 
 <!-- 1. ファーストビュー -->
 <section class="hero">
@@ -90,7 +84,7 @@
     </div>
 
     <div class="lifestyle__row">
-      <div class="lifestyle__image">
+      <div class="lifestyle__image lifestyle__image--bath">
         <img src="images/room-bathroom.jpg" alt="落ち着いた雰囲気のバスルーム">
       </div>
       <div class="lifestyle__text">
@@ -144,18 +138,15 @@
     </ul>
   </section>
 
-  <!-- 6. 間取り・物件概要 -->
+  <!-- 6. 物件概要 -->
   <section class="section overview">
     <div class="section__head">
       <p class="section__label">Floor Plan &amp; Overview</p>
-      <h2 class="section__title">間取り・物件概要</h2>
+      <h2 class="section__title">物件概要</h2>
     </div>
 
     <div class="overview__wrap">
-      <div class="overview__plan">
-        <img src="images/floorplan.jpg" alt="Mimosa Court 間取り図">
-        <p class="overview__plan-caption">1LDK / 40.25㎡</p>
-      </div>
+
 
       <table class="overview__table">
         <tbody>
@@ -232,10 +223,6 @@
       img.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23EDE4D8'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='24' fill='%238A9A82' text-anchor='middle' dominant-baseline='middle'%3EPHOTO%3C/text%3E%3C/svg%3E";
     }
   }, true);
-
-  window.addEventListener('scroll', function () {
-    document.getElementById('siteHeader').classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.6);
-  });
 </script>
 
 </body>
